@@ -71,3 +71,5 @@ dayTypeAndIntMn <- nwactivity2 %>% group_by(dayType, interval) %>% summarise(day
 with(dayTypeAndIntMn, xyplot(dayTypeAndIntMn~interval|dayType, type="l", xlab = "Daily Intervals",
                              ylab = "Avg # of Steps", main = "Total Steps by DayType"))
 ```
+
+Yes, there is a difference between the two plots.
